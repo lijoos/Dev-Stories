@@ -1,0 +1,22 @@
+mat-card {
+  background-color:white; 
+  /*background-image: url("/assets/img/bg1.jpg");*/
+}
+.card-demo mat-card,
+.card-demo mat-card-content {
+  margin-bottom: 24px;
+}
+.card-demo mat-card-footer {
+  left: 24px;
+  margin-bottom: 24px;
+}
+
+
+
+.fbox{
+  margin-top: 3px;
+  height: 1700px;
+  
+}
+
+
