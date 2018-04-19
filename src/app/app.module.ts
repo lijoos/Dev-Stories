@@ -11,7 +11,8 @@ import { ProjectsComponent } from './components/modules/projects/projects.compon
 import { ExperianceComponent } from './components/modules/experiance/experiance.component';
 import { EducationComponent } from './components/modules/education/education.component';
 import { AchievementsComponent } from './components/modules/achievements/achievements.component';
-
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import { ProjDescDialogComponent } from './components/shared/proj-desc-dialog/proj-desc-dialog.component';
 
 @NgModule({
   declarations: [
@@ -23,13 +24,16 @@ import { AchievementsComponent } from './components/modules/achievements/achieve
     ExperianceComponent,
     EducationComponent,
     AchievementsComponent,
+    ProjDescDialogComponent,
   ],
   imports: [
     BrowserModule,
     MaterialModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    BrowserAnimationsModule
   ],
   providers: [],
+  entryComponents: [ProjDescDialogComponent],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

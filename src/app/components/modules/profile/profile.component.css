@@ -3,6 +3,7 @@
     align-items: center;
     justify-content: center;
     height: 100%;
+    margin-top: 3px;
      
 }
 .card{
@@ -12,7 +13,7 @@
   height: 100%;
   border-radius: 4px;
   position: relative;
-  box-shadow: 0 3px 3px rgba(#E0E7F5,.5);
+  /*box-shadow: 0 3px 3px rgba(#E0E7F5,.5);*/
 }
 .header{
     background: #ACC0E9;
@@ -71,7 +72,7 @@
         height: 70%;
     }
     .profile-content{
-        margin: 20% 8% -4% 8%; 
+        margin: 26% 8% -4% 8%; 
         height: 45%;
     }
     .profile-name{

@@ -1,0 +1,60 @@
+
+.container{
+    
+    height: 300px;
+    width: 550px;
+    display: flex;
+    flex-direction: column;
+    background-color:antiquewhite;
+    margin: -11px;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      border: 2px solid black;
+}
+/*.container:hover {
+    box-shadow: 0 0 6px rgba(35, 173, 255, 1);
+}*/
+.pop-sub{
+     display: flex;
+     flex-direction: row;
+     flex-basis: 33%;
+     flex-grow: 1;
+       box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.pop-main{
+    background-color: #8bc34a;
+     flex-grow: 1;
+       box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}.pop-main:hover {
+    box-shadow: 0 0 6px rgba(35, 173, 255, 1);
+}
+.pop-one{
+        background-color: #9c27b0;
+        flex-grow: 1;
+}
+.pop-one:hover {
+    box-shadow: 0 0 6px rgba(35, 173, 255, 1);
+}
+.pop-two{
+    background-color: #03a9f4;
+       flex-grow: 1;
+}
+.pop-two:hover {
+    box-shadow: 0 0 6px rgba(35, 173, 255, 1);
+}
+.pop-three{
+   background-color: #009688;
+      flex-grow: 1;
+}
+.pop-three:hover {
+    box-shadow: 0 0 6px rgba(35, 173, 255, 1);
+}
+.pop-close{
+   float: right;
+   margin: -2% -2% 0 0;
+    background-color: #3f51b5
+}
+@media only screen and (max-width: 500px) {
+.container{
+  width: 250px;
+  height: 350px;}
+}

@@ -1,3 +1,5 @@
+import { ProjDescDialogComponent } from './../../shared/proj-desc-dialog/proj-desc-dialog.component';
+import { MatDialog } from '@angular/material';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -6,10 +8,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./projects.component.css']
 })
 export class ProjectsComponent implements OnInit {
+  
 
-  constructor() { }
+  constructor(public dialog: MatDialog) { }
 
   ngOnInit() {
   }
+  openDialog(): void {
+    let dialogRef = this.dialog.open(ProjDescDialogComponent, {
+      width: '523px;',
+    });
 
+  }
 }
