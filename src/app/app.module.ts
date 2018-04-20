@@ -1,9 +1,11 @@
+import { CarousalComponent } from './components/shared/carousal/carousal.component';
 import { MaterialModule } from './Modules/material.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FlexLayoutModule } from '@angular/flex-layout';
 
 import { AppComponent } from './app.component';
+import { CarouselModule } from 'ngx-bootstrap';
 import { NavabarComponent } from './components/headers/navabar/navabar.component';
 import { MainComponent } from './components/main/main.component';
 import { ProfileComponent } from './components/modules/profile/profile.component';
@@ -25,12 +27,14 @@ import { ProjDescDialogComponent } from './components/shared/proj-desc-dialog/pr
     EducationComponent,
     AchievementsComponent,
     ProjDescDialogComponent,
+    CarousalComponent,
   ],
   imports: [
     BrowserModule,
     MaterialModule,
     FlexLayoutModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    CarouselModule.forRoot()
   ],
   providers: [],
   entryComponents: [ProjDescDialogComponent],
