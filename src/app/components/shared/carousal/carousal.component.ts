@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ProjDescDialogComponent } from './../../shared/proj-desc-dialog/proj-desc-dialog.component';
+import { MatDialog } from '@angular/material';
 
 @Component({
   selector: 'app-carousal',
@@ -7,7 +9,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CarousalComponent implements OnInit {
 
-  constructor() { }
+  constructor(public dialog: MatDialog) { }
+   openDialog(): void {
+    let dialogRef = this.dialog.open(ProjDescDialogComponent, {
+      width: '523px;',
+    });
+
+  }
 
   ngOnInit() {
   }

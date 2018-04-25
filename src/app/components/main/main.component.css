@@ -16,7 +16,7 @@ mat-card {
 
 .fbox{
   margin: 10px;
-  height: 2000px;
+ 
   
 }
 .fbox-item
@@ -24,7 +24,7 @@ mat-card {
    margin-top: 4%;
 }
 .fbox-top-item{
- margin-top: 50px;
+ margin-top: 3%;
 }
 .dev-title-font{
    font-family: 'Acme', sans-serif;
