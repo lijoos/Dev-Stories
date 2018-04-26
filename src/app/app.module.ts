@@ -3,6 +3,7 @@ import { MaterialModule } from './Modules/material.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { ChartsModule } from 'ng2-charts';
 
 import { AppComponent } from './app.component';
 import { CarouselModule } from 'ngx-bootstrap';
@@ -15,6 +16,7 @@ import { EducationComponent } from './components/modules/education/education.com
 import { AchievementsComponent } from './components/modules/achievements/achievements.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { ProjDescDialogComponent } from './components/shared/proj-desc-dialog/proj-desc-dialog.component';
+import { TechnicalSkillsComponent } from './components/modules/technical-skills/technical-skills.component';
 
 @NgModule({
   declarations: [
@@ -28,13 +30,15 @@ import { ProjDescDialogComponent } from './components/shared/proj-desc-dialog/pr
     AchievementsComponent,
     ProjDescDialogComponent,
     CarousalComponent,
+    TechnicalSkillsComponent,
   ],
   imports: [
     BrowserModule,
     MaterialModule,
     FlexLayoutModule,
     BrowserAnimationsModule,
-    CarouselModule.forRoot()
+    CarouselModule.forRoot(),
+    ChartsModule
   ],
   providers: [],
   entryComponents: [ProjDescDialogComponent],

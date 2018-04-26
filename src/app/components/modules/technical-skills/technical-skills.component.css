@@ -1,0 +1,12 @@
+.tech-chart{
+display: block;
+
+flex-basis: 100%;
+}
+.tech-bar{
+    /*flex-basis: 50%;*/
+}
+.content{
+    display: flex;
+    flex-direction: row;
+}
