@@ -10,18 +10,23 @@
     
 }
 .dialog-head{
-  box-shadow: 0 13px 16px rgba(#ACC0E9,.5);
+ 
   height: 10%;
   width: 100%;
-  border: 1px solid black;
 }
 .dialog-content{
     height: 90%;
     width: 100%;
-    box-shadow: 0 3px 6px rgba(#ACC0E9,.5);
-    border: 1px solid black;
+  
     display: flex;
     flex-direction: row;
+}
+.dialog-left{
+    height: 100%;
+    flex-basis: 50%;
+}
+.dialog-right{
+    flex-basis: 50%;
 }
 /*.container:hover {
     box-shadow: 0 0 6px rgba(35, 173, 255, 1);

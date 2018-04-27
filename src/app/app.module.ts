@@ -31,6 +31,7 @@ import { TechnicalSkillsComponent } from './components/modules/technical-skills/
     ProjDescDialogComponent,
     CarousalComponent,
     TechnicalSkillsComponent,
+
   ],
   imports: [
     BrowserModule,

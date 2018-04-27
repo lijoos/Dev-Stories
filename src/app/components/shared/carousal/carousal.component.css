@@ -75,8 +75,8 @@ height: 150px;
    height: 127px;
 }
 .mat-raised-button{
-  margin-top: 33px;
-  margin-left: 56px;
+  margin-top: 10%;
+  margin-left: 32%;
   
 }
 .mat-parent-small {
@@ -121,7 +121,7 @@ height: 150px;
   /*background-image: url("/assets/img/bg1.jpg");*/
 }
 .carousel-item{
-  height: 385px;
+  height: 373px;
   width: 100%;
  position: relative;
   background-color:white; 

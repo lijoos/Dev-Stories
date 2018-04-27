@@ -138,6 +138,11 @@
     color: #7f8386;
     line-height: 25px;
 }
+.icon-percentage{
+   font-size: 25px;
+     font-family: 'Acme', sans-serif;
+
+}
 .main-timeline .timeline:nth-child(2){ margin-top: 140px; }
 .main-timeline .timeline:nth-child(even){ margin-bottom: 80px; }
 .main-timeline .timeline:nth-child(odd){ margin: -140px 0 0 0; }

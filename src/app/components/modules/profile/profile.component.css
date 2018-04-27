@@ -16,18 +16,18 @@
 
 }*/
 .header{
-    background: #ACC0E9;
+    /*background: #ACC0E9;*/
      height: 250px;
     border-radius: 4px 4px 0 0;
-    background-image: url("/assets/img/Capture.png");
-    
+    /*background-image: url("/assets/img/Capture.png");*/
+    background: linear-gradient(40deg,#2096ff,#05ffa3)!important;
 }
 .profile-image{
       border-radius: 50%;
       height: 150px;
       
       
-      border: 4px solid #FFF;
+      border: 8px solid #FFF;
       box-shadow: 0 3px 6px rgba(#ACC0E9,.5);
 }
 .avatar{
