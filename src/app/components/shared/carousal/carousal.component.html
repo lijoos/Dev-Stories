@@ -1,0 +1,41 @@
+<carousel class="mat-carousal">
+    <div class="carousel-inner" align="center" role="listbox">
+
+        <slide *ngFor="let  ProjectSlidesModel of slides">
+            <div class="carousel-item" style="display: block; width: 100%;">
+                <div *ngFor="let  ProjectModel of ProjectSlidesModel.projectslide" class="col-md-4">
+                    <mat-card class="example-card">
+                        <img mat-card-image [src]="ProjectModel.logo" class="responsive"
+                            alt="Photo of a Shiba Inu">
+                        <mat-card-content>
+                            <div class="card-body">
+                                <div class="card-body-content">
+                                    <h4 class="card-title">{{ProjectModel.title}}</h4>
+                                    <p>{{ProjectModel.shortDesc}}</p>
+                                </div>
+                                <button mat-raised-button color="primary" (click)="openDialog(ProjectModel)">More</button>
+                            </div>
+                        </mat-card-content>
+                    </mat-card>
+                </div>
+            </div>
+        </slide>    
+    </div>
+</carousel>
+<carousel class="mat-carousal-mobile">
+    <slide *ngFor="let ProjectModel of  mobileSlides ">
+        <mat-card class="example-card">
+            <img mat-card-image [src]="ProjectModel.logo" class="responsive"
+                alt="Photo of a Shiba Inu">
+            <mat-card-content>
+                <div class="card-body">
+                    <div class="card-body-content">
+                        <h4 class="card-title">{{ProjectModel.title}}</h4>
+                        <p>{{ProjectModel.shortDesc}}</p>
+                    </div>
+                    <button mat-raised-button color="primary">More..</button>
+                </div>
+            </mat-card-content>
+        </mat-card>
+    </slide>
+</carousel>

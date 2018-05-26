@@ -32,9 +32,7 @@ import {
     MatToolbarModule,
     MatTooltipModule,
     MatStepperModule,
-    MatDialog,
-    MatDialogRef, 
-    MAT_DIALOG_DATA
+    
 } from '@angular/material';
 
 @NgModule({
@@ -69,8 +67,9 @@ import {
     MatTableModule,
     MatTabsModule,
     MatToolbarModule,
-    MatTooltipModule,
-  ]
+    MatTooltipModule,]
+   
+  
 })
 export class MaterialModule {
 

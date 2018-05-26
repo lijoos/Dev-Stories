@@ -1,44 +1,53 @@
 <mat-card>
+  <div class="fbox" fxLayout="column" >
+    <div class="fbox-top-item" >
+      <div >
+     <app-profile> </app-profile>
+      </div>
+    </div>
+     <div class="fbox-item"  >
+      <div >
+      <app-technical-skills></app-technical-skills>
+      </div>
+    </div>
+    <div class="fbox-item"  >
+      <div >
+      <app-projects> </app-projects>
+      </div>
+    </div>
+    <div class="fbox-item experiance"  >
+      <div >
+       <app-experiance></app-experiance>
+      </div>
+    </div>
+    <div class="fbox-item"  >
+      <div >
+       <app-education>  </app-education>
+      </div>
+    </div>
+    <!--<div class="fbox-timeline" fxLayout="row" fxLayoutAlign="center" fxFlex.gt-sm="41" fxFlex="20">
+      <div fxFlex.gt-sm="100" fxFlex="98">
+      <app-projects> </app-projects>
+      </div>
+    </div>
+    -->
+    
+     <!--<div fxLayout="row" fxLayoutAlign="center"   class="fbox-timeline" fxFlex="80">
+      <div fxFlex.gt-sm="62" fxFlex="98">
+        <app-experiance></app-experiance>
+      </div>
+    </div>-->
+    <!--<div fxLayout="row" fxLayoutAlign="center"  >
+      <div fxFlex.gt-sm="60" fxFlex="98">
+        <app-education></app-education>
+      </div>
+    </div>
+    <div fxLayout="row" fxLayoutAlign="center"  >
+      <div fxFlex.gt-sm="60" fxFlex="98">
+        <app-achievements></app-achievements>
+      </div>
+    </div>-->
+    <div></div>
+  </div>
 
-        <div class="fbox" fxLayout="column"  fxLayoutAlign="space-around none">
-           <div fxLayout="row" fxLayoutAlign="center" fxFlex.gt-sm="30" fxFlex="20">
-        <div fxFlex.gt-sm="100" fxFlex="98">
-        <app-profile></app-profile>
-        </div>
-      </div>
-      <div fxLayout="row" fxLayoutAlign="center">
-        <div fxFlex.gt-sm="60" fxFlex="98">
-          
-        </div>
-      </div>
-      <div fxLayout="row" fxLayoutAlign="center">
-        <div fxFlex.gt-sm="60" fxFlex="98">
-          <app-experiance></app-experiance>
-        </div>
-      </div>
-      <div fxLayout="row" fxLayoutAlign="center">
-        <div fxFlex.gt-sm="60" fxFlex="98">
-          <app-education></app-education>
-        </div>
-      </div>
-      <div fxLayout="row" fxLayoutAlign="center">
-        <div fxFlex.gt-sm="60" fxFlex="98">
-          <app-achievements></app-achievements>
-        </div>
-      </div>
-        </div>
-  
 </mat-card>
-<ol>
-  <li>
-    <mat-form-field>
-      <input matInput  placeholder="What's your name?">
-    </mat-form-field>
-  </li>
-  <li>
-    <button mat-raised-button (click)="openDialog()">Pick one</button>
-  </li>
-  <li *ngIf="animal">
-    You chose: <i>dd</i>
-  </li>
-</ol>

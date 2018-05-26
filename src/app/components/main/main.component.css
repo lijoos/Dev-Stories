@@ -1,5 +1,6 @@
 mat-card {
   background-color:white; 
+  
   /*background-image: url("/assets/img/bg1.jpg");*/
 }
 .card-demo mat-card,
@@ -14,9 +15,21 @@ mat-card {
 
 
 .fbox{
-  margin-top: 3px;
-  height: 1700px;
+  margin: 10px;
+ 
   
 }
-
+.fbox-item
+{
+   margin-top: 4%;
+}
+.experiance{
+  margin-top: 7%;
+}
+.fbox-top-item{
+ margin-top: 3%;
+}
+.dev-title-font{
+   font-family: 'Acme', sans-serif;
+}
 
