@@ -1,141 +1,39 @@
 <carousel class="mat-carousal">
     <div class="carousel-inner" align="center" role="listbox">
 
-        <slide>
+        <slide *ngFor="let  ProjectSlidesModel of slides">
             <div class="carousel-item" style="display: block; width: 100%;">
-                <div class="col-md-4">
+                <div *ngFor="let  ProjectModel of ProjectSlidesModel.projectslide" class="col-md-4">
                     <mat-card class="example-card">
-                        <img mat-card-image src="http://www.menteargentina.com/blog/wp-content/uploads/2015/10/healthcare.jpg" class="responsive"
+                        <img mat-card-image [src]="ProjectModel.logo" class="responsive"
                             alt="Photo of a Shiba Inu">
                         <mat-card-content>
                             <div class="card-body">
                                 <div class="card-body-content">
-                                    <h4 class="card-title">Lorenzo EPR</h4>
-                                    <p>Patient Management Module of Lorenzo has been developed newly in MVC framework.</p>
+                                    <h4 class="card-title">{{ProjectModel.title}}</h4>
+                                    <p>{{ProjectModel.shortDesc}}</p>
                                 </div>
-                                <button mat-raised-button color="primary" (click)="openDialog()">More..</button>
-                            </div>
-                        </mat-card-content>
-                    </mat-card>
-                </div>
-                <div class="col-md-4">
-                    <mat-card class="example-card">
-                        <img mat-card-image src="https://s3-media4.fl.yelpcdn.com/bphoto/jF-O24_AgkSPAR2Bm-dNFw/l.jpg" alt="Photo of a Shiba Inu">
-                        <mat-card-content>
-                            <div class="card-body">
-                                <div class="card-body-content">
-                                    <h4 class="card-title">Shopping Cart</h4>
-                                    <p>Online Insurence Quote genaration developed in angular 4</p>
-                                </div>
-
-                                <button mat-raised-button color="primary">Primary</button>
-                            </div>
-                        </mat-card-content>
-                    </mat-card>
-                </div>
-                <div class="col-md-4">
-                    <mat-card class="example-card">
-                        <img mat-card-image src="https://newsroom.aaa.com/wp-content/uploads/2016/06/AAA-Insurance-Named-Auto-Insurance-Brand-of-the-Year-.jpg"
-                            class="responsive" alt="Photo of a Shiba Inu">
-                        <mat-card-content>
-                            <div class="card-body">
-                                <div class="card-body-content">
-                                    <h4 class="card-title">Auto Policy</h4>
-                                    <p>It is a Web-based reporting system. This system is an inquiry only system. The data is
-                                        displayed using </p>
-                                </div>
-                                <button mat-raised-button color="primary">Primary</button>
+                                <button mat-raised-button color="primary" (click)="openDialog(ProjectModel)">More</button>
                             </div>
                         </mat-card-content>
                     </mat-card>
                 </div>
             </div>
-        </slide>
-
-        <slide>
-            <div class="carousel-item" style="display: block; width: 100%;">
-                <div class="col-md-4">
-                    <mat-card class="example-card">
-                        <img mat-card-image src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(60).jpg" alt="Photo of a Shiba Inu">
-                        <mat-card-content>
-                            <div class="card-body">
-                                <h4 class="card-title">Card title</h4>
-                                <p>Some quick example text to build on the card title and make up the bulk of the card's content.
-                                </p>
-                                <button mat-raised-button color="primary">Primary</button>
-                            </div>
-                        </mat-card-content>
-                    </mat-card>
-                </div>
-            </div>
-        </slide>
+        </slide>    
     </div>
 </carousel>
 <carousel class="mat-carousal-mobile">
-    <slide>
+    <slide *ngFor="let ProjectModel of  mobileSlides ">
         <mat-card class="example-card">
-            <img mat-card-image src="http://www.menteargentina.com/blog/wp-content/uploads/2015/10/healthcare.jpg" class="responsive"
+            <img mat-card-image [src]="ProjectModel.logo" class="responsive"
                 alt="Photo of a Shiba Inu">
             <mat-card-content>
                 <div class="card-body">
                     <div class="card-body-content">
-                        <h4 class="card-title">Lorenzo EPR</h4>
-                        <p>Patient Management Module of Lorenzo has been developed newly in MVC framework.</p>
+                        <h4 class="card-title">{{ProjectModel.title}}</h4>
+                        <p>{{ProjectModel.shortDesc}}</p>
                     </div>
                     <button mat-raised-button color="primary">More..</button>
-                </div>
-            </mat-card-content>
-        </mat-card>
-    </slide>
-    <slide>
-        <mat-card class="example-card">
-            <img mat-card-image src="https://mdbootstrap.com/img/Photos/Horizontal/Food/4-col/img%20(53).jpg" alt="Photo of a Shiba Inu">
-            <mat-card-content>
-                <div class="card-body">
-                    <h4 class="card-title">Card title</h4>
-                    <p>Some quick example text to build on the card title and make up the bulk of the card's content.
-                    </p>
-                    <button mat-raised-button color="primary">Primary</button>
-                </div>
-            </mat-card-content>
-        </mat-card>
-    </slide>
-    <slide>
-        <mat-card class="example-card">
-            <img mat-card-image src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(18).jpg" alt="Photo of a Shiba Inu">
-            <mat-card-content>
-                <div class="card-body">
-                    <h4 class="card-title">Card title</h4>
-                    <p>Some quick example text to build on the card title and make up the bulk of the card's content.
-                    </p>
-                    <button mat-raised-button color="primary">Primary</button>
-                </div>
-            </mat-card-content>
-        </mat-card>
-    </slide>
-    <slide>
-
-        <mat-card class="example-card">
-            <img mat-card-image src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(60).jpg" alt="Photo of a Shiba Inu">
-            <mat-card-content>
-                <div class="card-body">
-                    <h4 class="card-title">Card title</h4>
-                    <p>Some quick example text to build on the card title and make up the bulk of the card's content.
-                    </p>
-                    <button mat-raised-button color="primary">Primary</button>
-                </div>
-            </mat-card-content>
-        </mat-card>
-    </slide>
-    <slide>
-        <mat-card class="example-card">
-            <img mat-card-image src="https://mdbootstrap.com/img/Photos/Horizontal/Food/4-col/img%20(45).jpg" alt="Photo of a Shiba Inu">
-            <mat-card-content>
-                <div class="card-body">
-                    <h4 class="card-title">Card title</h4>
-                    <p>Some quick example text to build on the card title and make up the bulk of the card's content.
-                    </p>
-                    <button mat-raised-button color="primary">Primary</button>
                 </div>
             </mat-card-content>
         </mat-card>

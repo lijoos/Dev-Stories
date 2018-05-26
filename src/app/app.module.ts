@@ -1,3 +1,5 @@
+import { EducationService } from './components/modules/education/education.service';
+import { ProjectService } from './components/modules/projects/project.service';
 import { CarousalComponent } from './components/shared/carousal/carousal.component';
 import { MaterialModule } from './Modules/material.module';
 import { BrowserModule } from '@angular/platform-browser';
@@ -41,7 +43,7 @@ import { TechnicalSkillsComponent } from './components/modules/technical-skills/
     CarouselModule.forRoot(),
     ChartsModule
   ],
-  providers: [],
+  providers: [ProjectService,EducationService],
   entryComponents: [ProjDescDialogComponent],
   bootstrap: [AppComponent]
 })

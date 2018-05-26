@@ -11,24 +11,7 @@ export class TechnicalSkillsComponent implements OnInit {
   public doughnutChartData: number[] = [300,150,350,100,20,20,80];
   public doughnutChartType: string = 'doughnut';
  
-public static defaultColors:Array<number[]> = [
-  [255, 99, 132],
-     [255, 99, 132],
-    [255, 99, 132],
-     [255, 99, 132],
-     [255, 99, 132],
-     [255, 99, 132],
-    [255, 99, 132],
-     [255, 99, 132],
-      [255, 99, 132],
-     [255, 99, 132],
-    [255, 99, 132],
-     [255, 99, 132],
-      [255, 99, 132],
-     [255, 99, 132],
-    [255, 99, 132],
-     [255, 99, 132],
-  ];
+
   // events
   public chartClicked(e: any): void {
     console.log(e);

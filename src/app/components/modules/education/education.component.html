@@ -11,17 +11,17 @@
     <div class="row">
         <div class="col-md-12">
             <div class="main-timeline">
-                <div class="timeline">
+                <div class="timeline" *ngFo="let education of educations">
                     <div class="timeline-icon"></div>
-                    <span class="year">2013</span>
+                    <span class="year">{{education.year}}</span>
                     <div class="timeline-content">
-                        <h5 class="title">Master of Computer Application </h5>
+                        <h5 class="title">{{education.title}} </h5>
                         <p class="description">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum mattis felis vitae risus pulvinar tincidunt. Nam ac venenatis enim. Aenean hendrerit justo sed.
-                        </p>
+                          {{education.description}}
+                       </p>
                     </div>
                 </div>
-                <div class="timeline">
+                <!--<div class="timeline">
                     <div class="timeline-icon"></div>
                     <span class="year">2007</span>
                     <div class="timeline-content">
@@ -50,7 +50,7 @@
                             Fr G K M H S Kaniyaram , Kerala State Board
                         </p>
                     </div>
-                </div>
+                </div>-->
             </div>
         </div>
     </div>

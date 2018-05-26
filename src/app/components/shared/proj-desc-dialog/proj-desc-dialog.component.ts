@@ -1,3 +1,4 @@
+import { ProjectModel } from './../models/projects.model';
 import { Component, OnInit, Inject } from '@angular/core';
 import { MatDialogRef, MAT_DIALOG_DATA } from "@angular/material";
 
@@ -6,7 +7,12 @@ import { MatDialogRef, MAT_DIALOG_DATA } from "@angular/material";
   templateUrl: './proj-desc-dialog.component.html',
   styleUrls: ['./proj-desc-dialog.component.css']
 })
-export class ProjDescDialogComponent  {
+export class ProjDescDialogComponent implements OnInit {
+  project:ProjectModel;
+  ngOnInit(): void {
+  console.log(this.data.dataKey);
+  this.project=this.data.dataKey;
+  }
 
    constructor(
     public dialogRef: MatDialogRef<ProjDescDialogComponent>,
