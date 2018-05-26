@@ -1,3 +1,6 @@
+import { TechnicalService } from './components/modules/technical-skills/technical.service';
+import { ProfileSevice } from './components/modules/profile/profile.service';
+import { ExperianceService } from './components/modules/experiance/experiance.service';
 import { EducationService } from './components/modules/education/education.service';
 import { ProjectService } from './components/modules/projects/project.service';
 import { CarousalComponent } from './components/shared/carousal/carousal.component';
@@ -43,7 +46,7 @@ import { TechnicalSkillsComponent } from './components/modules/technical-skills/
     CarouselModule.forRoot(),
     ChartsModule
   ],
-  providers: [ProjectService,EducationService],
+  providers: [ProjectService,EducationService,ExperianceService,ProfileSevice,TechnicalService],
   entryComponents: [ProjDescDialogComponent],
   bootstrap: [AppComponent]
 })

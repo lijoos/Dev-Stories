@@ -10,21 +10,21 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="main-timeline">
-                    <div class="timeline ">
+                    <div class="timeline " *ngFor="let ExperianceModel of experinces">
                         <span class="timeline-icon"></span>
-                        <span class="year card">2017 - 2018</span>
+                        <span class="year card">{{ExperianceModel.year}}</span>
                         <div class="timeline-content">
                             <div class="avatar">
-                                <img class="profile-image" src="https://s3-media4.fl.yelpcdn.com/bphoto/jF-O24_AgkSPAR2Bm-dNFw/l.jpg"></div>
-                            <h3 class="title">All state India Banglore</h3>
+                                <img class="profile-image" [src]="ExperianceModel.companyLogo"></div>
+                            <h3 class="title">{{ExperianceModel.title}}</h3>
                             
-                            <span class="post">Consultant</span>
+                            <span class="post">{{ExperianceModel.designation}}</span>
                             <p class="description ">
-                                Full stack developer at All state india Pvt Ltd. Angular JS developer.
+                                {{ExperianceModel.description}}
                             </p>
                         </div>
                     </div>
-                    <div class="timeline">
+                    <!--<div class="timeline">
                         <span class="timeline-icon"></span>
                         <span class="year card">2015 - 2017</span>
                         <div class="timeline-content">
@@ -46,10 +46,10 @@
                             <h3 class="title">Cognizant</h3>
                             <span class="post">Programmer Analyst</span>
                             <p class="description">
-                               •	Worked as Programmer Analyst at Cognizant Technology Solutions. (From 2014 April to 2015 October).
+                              Worked as Programmer Analyst at Cognizant Technology Solutions. (From 2014 April to 2015 October).
                             </p>
                         </div>
-                    </div>
+                    </div>-->
 
                 </div>
             </div>
