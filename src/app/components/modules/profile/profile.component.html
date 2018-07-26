@@ -1,0 +1,27 @@
+<div class="container">
+  <div class="card">
+    <div class="header"></div>
+    <div class="avatar">
+      <img class="profile-image" [src]="profile.profileImage">
+  
+    </div>
+    <div class="profile-content">
+      <h1 class="profile-name">{{profile.profileName}} </h1>
+      
+      <hr>
+      <h1 class="profile-header">{{profile.profileHeader}}</h1>
+      <p>
+       {{profile.designation}} <br> {{profile.location}}<br> {{profile.profileTag}}</p>
+      <div class="profile-icons ">
+        <img class="profile-icon "  *ngFor="let tech of profile.technologies" [src]="tech" >
+        <!--<img class="profile-icon" src="/assets/icons/profile/dotnet.png" >
+         <img class="profile-icon" src="/assets/icons/profile/CSS3.png">
+          <img class="profile-icon" src="/assets/icons/profile/html.png" >
+         <img class="profile-icon" src="/assets/icons/profile/node.png">
+          <img class="profile-icon" src="/assets/icons/profile/angular.png" >
+           <img class="profile-icon" src="/assets/icons/profile/c-sharp.png" >-->
+          
+      </div>
+    </div>
+  </div>
+</div>

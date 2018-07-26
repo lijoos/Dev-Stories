@@ -1,0 +1,59 @@
+<div class="container">
+
+  <div class="project-header" color="primary">
+    <mat-toolbar color="primary" class="project-header">
+      <mat-icon>bookmark</mat-icon>
+      <span>Education</span>
+    </mat-toolbar>
+  </div>
+  <div class="content">
+    <div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="main-timeline">
+                <div class="timeline" *ngFor="let education of educations">
+                    <div class="timeline-icon"></div>
+                    <span class="year">{{education.year}}</span>
+                    <div class="timeline-content">
+                        <h5 class="title">{{education.title}} </h5>
+                        <p class="description">
+                          {{education.description}}
+                       </p>
+                    </div>
+                </div>
+                <!--<div class="timeline">
+                    <div class="timeline-icon"></div>
+                    <span class="year">2007</span>
+                    <div class="timeline-content">
+                        <h5 class="title">Bsc Electronics</h5>
+                        <p class="description">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum mattis felis vitae risus pulvinar tincidunt. Nam ac venenatis enim. Aenean hendrerit justo sed.
+                        </p>
+                    </div>
+                </div>
+                <div class="timeline">
+                    <div class="timeline-icon"></div>
+                    <span class="year">2005</span>
+                    <div class="timeline-content">
+                        <h5 class="title">Highe secondary</h5>
+                        <p class="description">
+                            Hige Seconday Keala State
+                          </p>
+                    </div>
+                </div>
+                <div class="timeline">
+                    <div class="timeline-icon"></div>
+                    <span class="year">2005</span>
+                    <div class="timeline-content">
+                        <h5 class="title">10 th Grade</h5>
+                        <p class="description">
+                            Fr G K M H S Kaniyaram , Kerala State Board
+                        </p>
+                    </div>
+                </div>-->
+            </div>
+        </div>
+    </div>
+</div>
+  </div>
+</div>

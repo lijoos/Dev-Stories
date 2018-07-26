@@ -1,0 +1,35 @@
+mat-card {
+  background-color:white; 
+  
+  /*background-image: url("/assets/img/bg1.jpg");*/
+}
+.card-demo mat-card,
+.card-demo mat-card-content {
+  margin-bottom: 24px;
+}
+.card-demo mat-card-footer {
+  left: 24px;
+  margin-bottom: 24px;
+}
+
+
+
+.fbox{
+  margin: 10px;
+ 
+  
+}
+.fbox-item
+{
+   margin-top: 4%;
+}
+.experiance{
+  margin-top: 7%;
+}
+.fbox-top-item{
+ margin-top: 3%;
+}
+.dev-title-font{
+   font-family: 'Acme', sans-serif;
+}
+
