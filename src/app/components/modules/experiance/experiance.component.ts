@@ -1,3 +1,5 @@
+import { ExperianceService } from './experiance.service';
+import { ExperianceModel } from './experiance.model';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -6,10 +8,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./experiance.component.css']
 })
 export class ExperianceComponent implements OnInit {
-
-  constructor() { }
+  experinces:ExperianceModel[];
+  constructor(public experianceService:ExperianceService) { }
 
   ngOnInit() {
+   this.experinces= this.experianceService.getAllExperiances();
   }
 
 }
